@@ -34,7 +34,7 @@
             Grid.Row="1" Grid.Column="2" Clicked="Pizza_Clicked" />
     <Button Text="Beef Burger"
             Grid.Row="1" Grid.Column="3" Clicked="Burger_Clicked" />
-    <Button Text="Cocktail"
+    <Button Text="Cock tail"
             Grid.Row="2" Grid.Column="0" Clicked="Cocktail_Clicked" />
     <Button Text="Ice Cream"
             Grid.Row="2" Grid.Column="1" Clicked="IceCream_Clicked" />

@@ -10,6 +10,18 @@ namespace Moodify
 {
 	public partial class App : Application
 	{
+        public interface IAuthenticate
+        {
+            Task<bool> Authenticate();
+        }
+
+        public static IAuthenticate Authenticator { get; private set; }
+
+        public static void Init(IAuthenticate authenticator)
+        {
+            Authenticator = authenticator;
+        }
+
         public App()
         {
             MainPage = new TabbedPage
@@ -18,6 +30,7 @@ namespace Moodify
                 {
                     new MainPage(),
                     new MenuPage(),
+                    new MapPage(),
                     new AboutPage()
                 }
             };
