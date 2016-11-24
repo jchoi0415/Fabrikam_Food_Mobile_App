@@ -11,6 +11,12 @@
              FontSize="50"
              FontAttributes="Bold"
              TextColor="Fuchsia" />
+    <Label Text="Best European Cuisine"
+         VerticalOptions="Start"
+         HorizontalOptions="Center"
+         FontSize="20"
+         FontAttributes="Italic"
+         TextColor="Fuchsia" />
     <Label Text=" "
          VerticalOptions="Center"
          HorizontalOptions="Center"
