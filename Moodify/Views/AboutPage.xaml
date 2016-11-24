@@ -5,7 +5,7 @@
              Title="About Us">
 
   <StackLayout>
-    <Label Text="About Us"
+    <Label Text="About Us!"
              VerticalOptions="Start"
              HorizontalOptions="Center"
              FontSize="50"

@@ -15,10 +15,9 @@ namespace Moodify
         public MapPage()
         {
             InitializeComponent();
-            googleDist();
         }
 
-        async void googleDist()
+        async void Button_Clicked(Object sender, EventArgs e)
         {
             HttpClient client = new HttpClient();
 

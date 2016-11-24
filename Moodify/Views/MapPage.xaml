@@ -5,10 +5,18 @@
              Title="Distance">
   
   <StackLayout>
-    <Label x:Name="Sentence1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
-    <Label x:Name="Sentence2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
-    <Label x:Name="Sentence3" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
-    <Label x:Name="Sentence4" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
+    <Label Text="Distance!"
+         VerticalOptions="Start"
+         HorizontalOptions="Center"
+         FontSize="50"
+         FontAttributes="Bold"
+         TextColor="Fuchsia"/>
+    <Button Text="Update"
+            Clicked="Button_Clicked" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
+    <Label x:Name="Sentence1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" Margin="4" />
+    <Label x:Name="Sentence2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" Margin="4" />
+    <Label x:Name="Sentence3" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" Margin="4" />
+    <Label x:Name="Sentence4" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" Margin="4" />
     <Label Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
     <Label Text="COME ALONG NOW!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
   </StackLayout>

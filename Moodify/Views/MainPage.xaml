@@ -5,7 +5,7 @@
              Title="Home">
   
   <StackLayout>
-    <Label Text="Fabrikam Food"
+    <Label Text="Fabrikam Food!"
              VerticalOptions="Start"
              HorizontalOptions="Center" 
              FontSize="50"

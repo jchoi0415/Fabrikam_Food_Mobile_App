@@ -23,7 +23,7 @@
       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
 
-    <Label Text="Menu" Grid.ColumnSpan="4" HorizontalOptions="Center"
+    <Label Text="Menu!" Grid.ColumnSpan="4" HorizontalOptions="Center"
          Grid.Row="0" Grid.Column="0" FontSize="50" FontAttributes="Bold" TextColor="Fuchsia" />
     
     <Button Text="Steak"
