@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Moodify.AboutPage"
+             Title="About Us">
+
+  <StackLayout>
+    <Label Text="About Us"
+             VerticalOptions="Start"
+             HorizontalOptions="Center"
+             FontSize="50"
+             FontAttributes="Bold"
+             TextColor="Fuchsia"/>
+
+    <Label Text="We are Fabrikam Food, where we serve the best food in Redmond! We specialise in European Cuisine with some special desserts to follow through. Come into our restaurant today to have a taste for yourself!"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="20"
+         TextColor="Black"
+         Margin="4"/>
+
+    <Image Source="logo.png"
+           VerticalOptions="End"
+           HorizontalOptions="Center"/>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Moodify.MenuPage"
+             Title="Menu">
+
+  <Grid x:Name="menuGrid" RowSpacing="1" ColumnSpacing="1">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Label Text="Menu" Grid.ColumnSpan="4" HorizontalOptions="Center"
+         Grid.Row="0" Grid.Column="0" FontSize="50" FontAttributes="Bold" TextColor="Fuchsia" />
+    
+    <Button Text="Steak"
+            Grid.Row="1" Grid.Column="0" />
+    <Button Text="Pasta"
+            Grid.Row="1" Grid.Column="1" />
+    <Button Text="Pizza"
+            Grid.Row="1" Grid.Column="2" />
+    <Button Text="Beef Burger"
+            Grid.Row="1" Grid.Column="3" />
+    <Button Text="Cock tail"
+            Grid.Row="2" Grid.Column="0" />
+    <Button Text="Ice Cream"
+            Grid.Row="2" Grid.Column="1" />
+    <Button Text="Coffee"
+            Grid.Row="2" Grid.Column="2" />
+    <Button Text="Wine"
+            Grid.Row="2" Grid.Column="3" />
+    <Button Text="See Order" Grid.ColumnSpan="2"
+            Grid.Row="3" Grid.Column="0" BackgroundColor="Aqua" Clicked="ViewOrder_Clicked"/>
+    <Button Text="Reset Order" Grid.ColumnSpan="2"
+            Grid.Row="3" Grid.Column="2" BackgroundColor="Yellow" />
+    
+    <Label Text="Steak ="
+        Grid.Row="4" Grid.Column="0" Margin="4" FontSize="20" />
+    <Label Text="Pasta ="
+            Grid.Row="5" Grid.Column="0" Margin="4" FontSize="20" />
+    <Label Text="Pizza ="
+            Grid.Row="6" Grid.Column="0" Margin="4" FontSize="20" />
+    <Label Text="Burger ="
+            Grid.Row="7" Grid.Column="0" Margin="4" FontSize="20" />
+    <Label Text="Cocktail ="
+            Grid.Row="4" Grid.Column="2" Margin="4" FontSize="20" />
+    <Label Text="Ice Cream ="
+            Grid.Row="5" Grid.Column="2" Margin="4" FontSize="20" />
+    <Label Text="Coffee ="
+            Grid.Row="6" Grid.Column="2" Margin="4" FontSize="20" />
+    <Label Text="Wine ="
+            Grid.Row="7" Grid.Column="2" Margin="4" FontSize="20" />
+    
+    <ListView x:Name="orderList">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label Text="{Binding Steak}"
+                    Grid.Row="4" Grid.Column="1" FontSize="20" />
+            <Label Text="{Binding Pasta}"
+                    Grid.Row="5" Grid.Column="1" FontSize="20" />
+            <Label Text="{Binding Pizza}"
+                    Grid.Row="6" Grid.Column="1" FontSize="20" />
+            <Label Text="{Binding BeefBurger}"
+                    Grid.Row="7" Grid.Column="1" FontSize="20" />
+            <Label Text="{Binding Cocktail}"
+                    Grid.Row="4" Grid.Column="3" FontSize="20" />
+            <Label Text="{Binding IceCream}"
+                    Grid.Row="5" Grid.Column="3" FontSize="20" />
+            <Label Text="{Binding Coffee}"
+                    Grid.Row="6" Grid.Column="3" FontSize="20" />
+            <Label Text="{Binding Wine}"
+                    Grid.Row="7" Grid.Column="3" FontSize="20" />
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </Grid>
+</ContentPage>
