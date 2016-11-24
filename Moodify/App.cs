@@ -18,7 +18,6 @@ namespace Moodify
                 {
                     new MainPage(),
                     new MenuPage(),
-                    new MapPage(),
                     new AboutPage()
                 }
             };

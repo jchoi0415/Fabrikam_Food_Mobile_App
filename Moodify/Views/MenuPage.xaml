@@ -27,66 +27,58 @@
          Grid.Row="0" Grid.Column="0" FontSize="50" FontAttributes="Bold" TextColor="Fuchsia" />
     
     <Button Text="Steak"
-            Grid.Row="1" Grid.Column="0" />
+        Grid.Row="1" Grid.Column="0" Clicked="Steak_Clicked" />
     <Button Text="Pasta"
-            Grid.Row="1" Grid.Column="1" />
+            Grid.Row="1" Grid.Column="1" Clicked="Pasta_Clicked" />
     <Button Text="Pizza"
-            Grid.Row="1" Grid.Column="2" />
+            Grid.Row="1" Grid.Column="2" Clicked="Pizza_Clicked" />
     <Button Text="Beef Burger"
-            Grid.Row="1" Grid.Column="3" />
-    <Button Text="Cock tail"
-            Grid.Row="2" Grid.Column="0" />
+            Grid.Row="1" Grid.Column="3" Clicked="Burger_Clicked" />
+    <Button Text="Cocktail"
+            Grid.Row="2" Grid.Column="0" Clicked="Cocktail_Clicked" />
     <Button Text="Ice Cream"
-            Grid.Row="2" Grid.Column="1" />
+            Grid.Row="2" Grid.Column="1" Clicked="IceCream_Clicked" />
     <Button Text="Coffee"
-            Grid.Row="2" Grid.Column="2" />
+            Grid.Row="2" Grid.Column="2" Clicked="Coffee_Clicked" />
     <Button Text="Wine"
-            Grid.Row="2" Grid.Column="3" />
+            Grid.Row="2" Grid.Column="3" Clicked="Wine_Clicked" />
     <Button Text="See Order" Grid.ColumnSpan="2"
-            Grid.Row="3" Grid.Column="0" BackgroundColor="Aqua" Clicked="ViewOrder_Clicked"/>
+            Grid.Row="3" Grid.Column="0" BackgroundColor="Aqua" Clicked="ViewOrder_Clicked" />
     <Button Text="Reset Order" Grid.ColumnSpan="2"
-            Grid.Row="3" Grid.Column="2" BackgroundColor="Yellow" />
+            Grid.Row="3" Grid.Column="2" BackgroundColor="Yellow" Clicked="ResetOrder_Clicked" />
     
-    <Label Text="Steak ="
-        Grid.Row="4" Grid.Column="0" Margin="4" FontSize="20" />
-    <Label Text="Pasta ="
-            Grid.Row="5" Grid.Column="0" Margin="4" FontSize="20" />
-    <Label Text="Pizza ="
-            Grid.Row="6" Grid.Column="0" Margin="4" FontSize="20" />
-    <Label Text="Burger ="
-            Grid.Row="7" Grid.Column="0" Margin="4" FontSize="20" />
-    <Label Text="Cocktail ="
-            Grid.Row="4" Grid.Column="2" Margin="4" FontSize="20" />
-    <Label Text="Ice Cream ="
-            Grid.Row="5" Grid.Column="2" Margin="4" FontSize="20" />
-    <Label Text="Coffee ="
-            Grid.Row="6" Grid.Column="2" Margin="4" FontSize="20" />
-    <Label Text="Wine ="
-            Grid.Row="7" Grid.Column="2" Margin="4" FontSize="20" />
-    
-    <ListView x:Name="orderList">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <Label Text="{Binding Steak}"
-                    Grid.Row="4" Grid.Column="1" FontSize="20" />
-            <Label Text="{Binding Pasta}"
-                    Grid.Row="5" Grid.Column="1" FontSize="20" />
-            <Label Text="{Binding Pizza}"
-                    Grid.Row="6" Grid.Column="1" FontSize="20" />
-            <Label Text="{Binding BeefBurger}"
-                    Grid.Row="7" Grid.Column="1" FontSize="20" />
-            <Label Text="{Binding Cocktail}"
-                    Grid.Row="4" Grid.Column="3" FontSize="20" />
-            <Label Text="{Binding IceCream}"
-                    Grid.Row="5" Grid.Column="3" FontSize="20" />
-            <Label Text="{Binding Coffee}"
-                    Grid.Row="6" Grid.Column="3" FontSize="20" />
-            <Label Text="{Binding Wine}"
-                    Grid.Row="7" Grid.Column="3" FontSize="20" />
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
+    <Label Text="Steak"
+        Grid.Row="4" Grid.Column="0" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Pasta"
+            Grid.Row="5" Grid.Column="0" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Pizza"
+            Grid.Row="6" Grid.Column="0" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Burger"
+            Grid.Row="7" Grid.Column="0" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Cocktail"
+            Grid.Row="4" Grid.Column="2" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Ice Cream"
+            Grid.Row="5" Grid.Column="2" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Coffee"
+            Grid.Row="6" Grid.Column="2" Margin="4" FontSize="20" VerticalOptions="Center"/>
+    <Label Text="Wine"
+            Grid.Row="7" Grid.Column="2" Margin="4" FontSize="20" VerticalOptions="Center"/>
+   
+    <Label x:Name="SteakNum"
+            Grid.Row="4" Grid.Column="1" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="PastaNum"
+            Grid.Row="5" Grid.Column="1" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="PizzaNum"
+            Grid.Row="6" Grid.Column="1" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="BurgerNum"
+            Grid.Row="7" Grid.Column="1" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="CocktailNum"
+            Grid.Row="4" Grid.Column="3" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="CreamNum"
+            Grid.Row="5" Grid.Column="3" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="CoffeeNum"
+            Grid.Row="6" Grid.Column="3" FontSize="20" VerticalOptions="Center"/>
+    <Label x:Name="WineNum"
+            Grid.Row="7" Grid.Column="3" FontSize="20" VerticalOptions="Center"/>
   </Grid>
 </ContentPage>

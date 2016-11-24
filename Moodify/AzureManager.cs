@@ -18,7 +18,7 @@ namespace Moodify
 
         private AzureManager()
         {
-            this.client = new MobileServiceClient("http://fabrikamfood16.azurewebsites.net/");
+            this.client = new MobileServiceClient("https://fabrikamfood16.azurewebsites.net/");
             this.menuTable = this.client.GetTable<Menu>();
         }
 

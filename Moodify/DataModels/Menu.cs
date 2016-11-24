@@ -9,8 +9,11 @@ namespace Moodify.DataModels
 {
     public class Menu
     {
-        [JsonProperty(PropertyName = "Id")]
-        public string ID { get; set; }
+        [JsonProperty(PropertyName = "id")]
+        public string id { get; set; }
+
+        [JsonProperty(PropertyName = "Name")]
+        public string Name { get; set; }
 
         [JsonProperty(PropertyName = "Steak")]
         public int Steak { get; set; }
@@ -39,10 +42,13 @@ namespace Moodify.DataModels
         [JsonProperty(PropertyName = "createdAt")]
         public DateTime Date { get; set; }
 
-        [JsonProperty(PropertyName = "lat")]
-        public double Lat { get; set; }
+        [JsonProperty(PropertyName = "updatedAt")]
+        public string updatedAt { get; set; }
 
-        [JsonProperty(PropertyName = "lon")]
-        public double Lon { get; set; }
+        [JsonProperty(PropertyName = "version")]
+        public string version { get; set; }
+
+        [JsonProperty(PropertyName = "deleted")]
+        public bool deleted { get; set; }
     }
 }

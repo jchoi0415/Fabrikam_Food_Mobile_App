@@ -11,5 +11,23 @@
              FontSize="50"
              FontAttributes="Bold"
              TextColor="Fuchsia" />
+    <Label Text=""
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="250"/>
+    <Label Text="Opening Hours - Mon~Sun"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             FontSize="30"
+             FontAttributes="Bold"
+             TextColor="Fuchsia" />
+    <Label Text="Morning to Lunch: 7am ~ 2pm"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="20" />
+    <Label Text="Dinner: 5pm ~ 9pm"
+     VerticalOptions="Center"
+     HorizontalOptions="Center"
+     FontSize="20" />
   </StackLayout>
 </ContentPage>
