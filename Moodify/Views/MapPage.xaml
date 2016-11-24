@@ -2,7 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Moodify.MapPage"
-             Title="Location">
+             Title="Distance">
   
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <Label x:Name="Sentence1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
+    <Label x:Name="Sentence2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
+    <Label x:Name="Sentence3" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
+    <Label x:Name="Sentence4" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20"/>
+    <Label Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
+    <Label Text="COME ALONG NOW!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
+  </StackLayout>
 </ContentPage>

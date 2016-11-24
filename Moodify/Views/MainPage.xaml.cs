@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Plugin.Geolocator;
 using Xamarin.Forms;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace Moodify
 {
