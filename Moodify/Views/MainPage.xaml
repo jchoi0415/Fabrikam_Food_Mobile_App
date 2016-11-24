@@ -16,8 +16,10 @@
          HorizontalOptions="Center"
          FontSize="100"/>
     <Button x:Name="loginButton" 
-            Text="Sign-in" 
+            Text="Facebook Sign-in" 
             MinimumHeightRequest="50"
+            BackgroundColor="Blue"
+            TextColor="White"
             Clicked="loginButton_Clicked"/>
     <Label Text="Opening Hours - Mon~Sun"
              VerticalOptions="Center"
